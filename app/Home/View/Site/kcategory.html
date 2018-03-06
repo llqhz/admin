@@ -1,0 +1,290 @@
+<extend name="Template/base" />
+<block name="main">
+<div class="">
+    <div class="page-title">
+      <div class="title_left">
+        <h3>案例分类 <small>全部分类</small></h3>
+      </div>
+
+      <div class="title_right">
+        <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="输入关键词">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">搜索</button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel">
+          <div class="x_title">
+            <h2>全部分类 <small>当前共有 32 个分类</small></h2>
+            <ul class="nav navbar-right panel_toolbox">
+              <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Settings 1</a>
+                  </li>
+                  <li><a href="#">Settings 2</a>
+                  </li>
+                </ul>
+              </li>
+              <li><a class="close-link"><i class="fa fa-close"></i></a>
+              </li>
+            </ul>
+            <div class="clearfix"></div>
+          </div>
+          <div class="x_content">
+            <div class="table-responsive">
+              <table class="table table-striped table-bordered table-condensed table-hover "  style="">
+                <thead>
+                  <tr class="headings">
+                    <th>
+                      <input type="checkbox" id="check-all" class="flat">
+                    </th>
+                    <th class="column-title">排序号 </th>
+                    <th class="column-title">分类Id </th>
+                    <th class="column-title">分类名称 </th>
+                    <th class="column-title">分类描述 </th>
+                    <th class="column-title">分类归属 </th>
+                    <th class="column-title">分类等级 </th>
+                    <th class="column-title">分类路径 </th>
+                    <th class="column-title">状态 </th>
+                    <th class="column-title no-link last"><span class="nobr">操作</span>
+                    </th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <!-- <tr>
+                    <td class="a-center ">
+                      <input type="checkbox" class="flat" name="table_records">
+                    </td>
+                    <td class=" "><input type="number" name="" value="" placeholder=""></td>
+                    <td class=" ">253</td>
+                    <td class=" ">————|医疗行业</td>
+                    <td class="td-mw" >
+                    这里是分类的一些描述信息</td>
+                    <td class="">一级菜单</td>
+                    <td class="">1,5,8</td>
+                    <td class=" "><a href="#" class="text-success">正常</a></td>
+                    <td class=" last">
+                        <a href="#" title="编辑"><i class="fa fa-edit"></i> </a> |
+                        <a href="#" title="删除"><i class="fa fa-remove"></i> </a>
+                    </td>
+                  </tr> -->
+                  <foreach name="tree" item="t">
+                  <tr data-id="{$t.id}">
+                    <td class="a-center ">
+                      <input type="checkbox" class="flat" name="table_records">
+                    </td>
+                    <td class=" "><input type="number" value="{$t.corder}" placeholder=""></td>
+                    <td class=" ">{$t.id}</td>
+                    <td class=" ">{$t.name}</td>
+                    <td class="td-mw" >{$t.detail}</td>
+                    <td class=" ">{$t.prekind}</td>
+                    <td class="">{$t.level}</td>
+                    <td class="">{$t.path}</td>
+                    <td class="">
+                      <switch name='t["status"]'>
+                        <case value='1'><a href="#" class="text-success changeStatus">正常</a></case>
+                        <case value='0'><a href="#" class="text-warning changeStatus">已禁用</a></case>
+                      </switch>
+                    </td>
+                    <td class=" last">
+                        <a class="td-edit" href="#" title="编辑"><i class="fa fa-edit"></i> </a> |
+                        <a class="td-remove" href="#" title="删除"><i class="fa fa-remove"></i> </a>
+                    </td>
+                  </tr>
+                  </foreach>
+                  <!-- <tr>
+                    <td class="a-center ">
+                      <input type="checkbox" class="flat" name="table_records">
+                    </td>
+                    <td class=" ">121000039</td>
+                    <td class=" ">May 23, 2014 11:30:12 PM</td>
+                    <td class=" ">121000208 <i class="success fa fa-long-arrow-up"></i>
+                    </td>
+                    <td class=" ">John Blank L</td>
+                    <td class=" ">Paid</td>
+                    <td class="a-right a-right ">$741.20</td>
+                    <td class=" last"><a href="#">View</a>
+                    </td>
+                  </tr -->
+                </tbody>
+              </table>
+            </div>
+            <p>
+                <button type='button' id="update-order" class="btn btn-info">更新排序</button>
+                <button type='button' id="delete-all" class="btn btn-info">批量删除</button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</block>
+
+<block name="link-end">
+  <script>
+    $(function(){
+      var app_list = {
+        data: {
+          changeStatusUrl : '{:U("kind/changeStatus")}',
+          removeKindUrl : '{:U("kind/removeKind")}',
+          editKindUrl : '{:U("kind/editKind",["id"=>__ID__])}',
+          updateOrderUrl : '{:U("kind/updateOrder")}',
+          deleteAllUrl : '{:U("kind/deleteAll")}',
+        },
+        init: function(){
+          this.eventInit();
+        },
+        eventInit: function(){
+          var app_list = this;
+
+          //监控 table ->正常 状态改变
+          $('.changeStatus').click(function(event) {
+              var element = this;
+              var options = {
+                  title: '更改状态',
+                  text: '确定要更改状态?',
+                  confirm: function () {
+                      app_list.changeStatus(element);
+                  }
+              };
+              ll.tips(options);
+          });
+
+          //监控 table ->td 删除
+          $('.td-remove').click(function(event) {
+              var element = this;
+              var options = {
+                  title: '删除确认',
+                  text: '删除该分类,及其所有子分类?',
+                  confirm: function () {
+                      app_list.removeKind(element);
+                  }
+              };
+              ll.tips(options);
+          });
+
+          //监控 table ->td 编辑
+          $('.td-edit').click(function(event) {
+              var id = $(this).parents('tr').data('id');
+              var url = app_list.data.editKindUrl;
+              url = url.replace(/__ID__/g,id);
+              window.location.href = url;
+          });
+
+          $("#update-order").on('click', function(event) {
+            event.preventDefault();
+            /* Act on the event */
+            app_list.updateOrder();
+          });
+
+          $("#delete-all").on('click', function(event) {
+            event.preventDefault();
+            /* Act on the event */
+            app_list.deleteAll();
+          });
+        },
+        changeStatus:function(elm){
+          var id = $(elm).parents('tr').data('id');
+          var ops = {};
+          ll.ajax({
+            url: app_list.data.changeStatusUrl,
+            data: {id: id},
+            async: false,
+            success: function () {
+              ops.text = '更改成功';
+              ops.color = 'success';
+              ops.reload = true;
+            },
+            error: function(){
+              ops.text = '更改失败';
+            },
+          });
+          ll.alert(ops);
+        },
+        removeKind:function(elm){
+          var id = $(elm).parents('tr').data('id');
+          var ops = {};
+          ll.ajax({
+            url: app_list.data.removeKindUrl,
+            data: {id: id},
+            async: false,
+            success: function () {
+              ops.text = '删除成功';
+              ops.color = 'success';
+              ops.reload = true;
+            },
+            error: function(){
+              ops.text = '删除失败';
+            },
+          });
+          ll.alert(ops);
+        },
+        getSelectedData: function(){
+          var trs = $('tbody tr[class*=selected]');
+          var ids = [],ods=[];
+          $.each(trs, function(index, val) {
+             /* iterate through array or object */
+             var id = $(val).data('id');
+             ids.push(id);
+             var od = $(val).find('input[type=number]').val();
+             ods.push(od);
+          });
+          var data = {ids:ids,ods:ods};
+          return data;
+        },
+        updateOrder: function(){
+          var data = app_list.getSelectedData();
+          var op = {};
+          ll.ajax({
+            url: app_list.data.updateOrderUrl,
+            data: data,
+            async: false,
+            success: function(){
+              op.text = '更新排序成功';
+              op.color = 'success';
+              op.reload = true;
+            },
+            error: function(res){
+              op.text = res.msg;
+            }
+          });
+          ll.alert(op);
+        },
+        deleteAll: function(){
+          var data = app_list.getSelectedData();
+          var op = {};
+          ll.ajax({
+            url: app_list.data.deleteAllUrl,
+            data: data,
+            async: false,
+            success: function(){
+              op.text = '批量删除成功';
+              op.color = 'success';
+              op.reload = true;
+            },
+            error: function(res){
+              op.text = res.msg;
+            }
+          });
+          ll.alert(op);
+        },
+
+      };
+      app_list.init();
+    });
+  </script>
+</block>
+

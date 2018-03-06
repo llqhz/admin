@@ -1,0 +1,1 @@
+var data = {"news":[{"id":"1","title":"\t这里是示例新闻的标题这里是示例新闻的标题","desc":"这里是示例新闻的描述这里是示例新闻的描述这里是示例新闻的描述","time":"2018年03月05日","imgUrl":"/Public/upload/2018/0228/201802280927124d55.jpg","detailUrl":"Public/news/.html"},{"id":"2","title":"22222","desc":"555555","time":"2018年03月05日","imgUrl":"/Public/upload/2018/0228/201802280927124d55.jpg","detailUrl":"Public/news/.html"}]}

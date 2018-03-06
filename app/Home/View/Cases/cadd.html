@@ -1,0 +1,248 @@
+<extend name="Template/base" />
+<block name='link-start'>
+    <style type="text/css">
+        #div-pic {
+            margin-top: 10px;
+            height: 380px;
+            max-width: 320px;
+            border: 1px dotted blue;
+            background-image: url('http://placehold.it/230x380/bfb/bfb.png?text=none');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: auto 100%;
+        }
+    </style>
+</block>
+<block name="main">
+<div class="row">
+  <div class="col-md-12 col-sm-12 col-xs-12">
+    <div class="x_panel">
+      <div class="x_title">
+        <h2>案例管理 <small>添加案例</small></h2>
+        <ul class="nav navbar-right panel_toolbox">
+          <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Settings 1</a>
+              </li>
+              <li><a href="#">Settings 2</a>
+              </li>
+            </ul>
+          </li>
+          <li><a class="close-link"><i class="fa fa-close"></i></a>
+          </li>
+        </ul>
+        <div class="clearfix"></div>
+      </div>
+      <div class="x_content">
+        <br />
+
+        <form id="case_add" method="post" action="{:U('cases/caseAdd')}" data-parsley-validate class="form-horizontal form-label-left">
+          <div class="form-group">
+            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">案例标题 <span class="required">*</span>
+            </label>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <input type="text" name="title" required="required" class="form-control col-md-7 col-xs-12">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label col-md-3 col-sm-3 col-xs-12">所属分类 <span class="required">*</span></label>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <select class="select2_multiple form-control" name="parentId[]" tabindex="-1" multiple="multiple">
+                <foreach name='ops' item='op'>
+                  <option value="{$op.id}">{$op.name}</option>
+                </foreach>
+              </select>
+            </div>
+            <p class="help-block"> &nbsp;&nbsp;&nbsp;按住 <code>Ctrl</code> 键多选</p>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">案例简介 <span class="required">*</span>
+            </label>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <input type="text" name="detail" required="required" class="form-control col-md-7 col-xs-12">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">案例图片 <span class="required">*</span>
+            </label>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <button type="button" id="btn-up-pic" class="btn btn-warning btn-sm">上传图片</button>
+              &nbsp;&nbsp;
+              <span id="span-fileName">文件名</span>
+              <input class="hidden" type="file" disabled="disabled" id="input-pic" accept="image/*" name="pic">
+              <input type="text" name="thumb" id="input-thumb" hidden="" readonly="">
+              <div id="div-pic" draggable="true" class="text-center text-info">
+                <br><br><br><br>
+                <p class="text-muted">请拖动图片到此处</p>
+                <p class="text-muted">支持jpg,png,gif,bmp格式</p>
+                <p class="text-muted"> &lt;-- 图片预览 --&gt; </p>
+              </div>
+            </div>
+            <p id="pic" class="text-danger col-sm-4"></p>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">案例链接 <span class="required">*</span>
+            </label>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <input type="text" name="link" required="required" class="form-control col-md-7 col-xs-12">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">排序号 <span class="required">*</span>
+            </label>
+            <div class="col-md-3 col-sm-3 col-xs-12">
+              <input type="number" name="corder" value="{$li.corder}" required="required" class="form-control col-md-7 col-xs-12">
+            </div>
+          </div>
+
+          <div class="ln_solid"></div>
+          <div class="form-group">
+            <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+              <button type="submit" class="btn btn-success"> 提 交 </button>
+              <button class="btn btn-primary" type="reset"> 重 置 </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</block>
+<block name="link-end">
+
+<script type="text/javascript">
+  $(function(){
+    var app = {
+      data: {
+        uploadImgUrl: "{:U('cases/uploadImg')}",
+        caseAddUrl : "{:U('cases/caseAdd')}",
+        jumpUrl: "{:U('cases/clists')}",
+      },
+      init : function(){
+        app.clicktoupload();
+        app.droptoupload();
+        app.eventInit();
+      },
+      eventInit: function(){
+        var app = this;
+          /*提交*/
+          $('button[type=submit]').on('click2', function(event) {
+            event.preventDefault();
+            /* Act on the event */
+
+          });
+
+          $('#case_add').on('submit', function(event) {
+            event.preventDefault();
+            /* Act on the event */
+            app.submitForm();
+          });
+      },
+      droptoupload: function() {
+        var div_pic = document.getElementById('div-pic');
+        div_pic.ondragover = function (e) {
+            e.preventDefault();//阻止默认事件,才能ondrop
+        }
+        //需要将ondragover的默认事件阻止才能执行ondrop
+        div_pic.ondrop = function(e) {
+          var file = e.dataTransfer.files[0];
+          try {
+              app.upload(file);
+          } catch(e) {
+              console.log(e);
+              console.log('upload file error');
+          }
+          e.preventDefault();
+        }
+      },
+      clicktoupload : function () {
+        $("#btn-up-pic").click(function(event) {
+          /* Act on the event */
+          $('#input-pic').removeAttr("disabled");
+          $("#input-pic").click();
+          $('#input-pic').attr("disabled",'true');
+          $("#input-pic").change(function(event) {
+              //console.log(this.files[0]);
+              var file = this.files[0];
+              try {
+                  app.upload(file);
+              } catch(e) {
+                  console.log(e);
+                  console.log('upload file error');
+              }
+          });
+        });
+      },
+      upload : function (file) {
+        console.log(file);
+        $('#span-fileName').removeClass();
+        $('#span-fileName').text(file.name);
+        var allowed = ['image/jpg','image/jpeg','image/png','image/gif','image/bmp'];
+        var awd = false;
+        $.each(allowed, function(i, val) {
+             /* iterate through array or object */
+             if ( file.type == val ) {
+                awd = true;
+                return false;
+             }
+        });
+        if ( !awd) {
+            $('#span-fileName').addClass('text-danger');
+            var options = {title:'禁止上传',text:'请选择正确的文件类型!'};
+            ll.tips(options);
+            return false;
+        }
+        $('#span-fileName').addClass('text-success');
+
+        var fm = new FormData();
+        fm.append('pic', file);
+        ll.ajax({
+            url: app.data.uploadImgUrl,
+            //通过formdata创建的对象需要这两句
+            isFormData : true,
+            data: fm,       //这里data直接填FormData对象上传
+            success: function (res) {
+              $("#div-pic").css('background-image', 'url('+res.url+')');
+              $("#input-thumb").val(res.thumb);
+            },
+            error: function(res){
+              var options = {
+                  title : '提示',
+                  text : res.msg,
+              };
+              ll.tips(options);
+            }
+        });
+      },
+      submitForm: function(){
+        ll.ajax({
+          url: app.data.caseAddUrl,
+          data: ll.getFormData('#case_add'),
+          isFormData: true,
+          success: function(){
+            var ops = {
+              text: '添加成功',
+              color: 'success',
+              reload: app.data.jumpUrl
+            };
+            ll.alert(ops);
+          },
+          error: function(data){
+            ll.tips(data.msg);
+          },
+        });
+      },
+    };
+    app.init();
+  });
+</script>
+
+</block>

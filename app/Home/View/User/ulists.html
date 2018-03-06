@@ -1,0 +1,332 @@
+<extend name="Template/base" />
+<block name="main">
+<div class="">
+    <div class="page-title">
+      <div class="title_left">
+        <h3>用户列表 <small>全部用户</small></h3>
+      </div>
+
+      <div class="title_right">
+        <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="输入关键词">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">搜索</button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel">
+          <div class="x_title">
+            <h2>全部用户 <small>当前共有 32 个用户</small></h2>
+            <ul class="nav navbar-right panel_toolbox">
+              <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Settings 1</a>
+                  </li>
+                  <li><a href="#">Settings 2</a>
+                  </li>
+                </ul>
+              </li>
+              <li><a class="close-link"><i class="fa fa-close"></i></a>
+              </li>
+            </ul>
+            <div class="clearfix"></div>
+          </div>
+          <div class="x_content">
+            <div class="table-responsive">
+              <table class="table table-striped table-bordered  table-condensed table-hover "  style="">
+                <thead>
+                  <tr class="headings">
+                    <th>
+                      <input type="checkbox" id="check-all" class="flat">
+                    </th>
+                    <th class="column-title">Id </th>
+                    <th class="column-title">头像 </th>
+                    <th class="column-title">姓名 </th>
+                    <th class="column-title">手机号 </th>
+                    <th class="column-title">Email </th>
+                    <th class="column-title">密码 </th>
+                    <th class="column-title">注册时间 </th>
+                    <th class="column-title">权限 </th>
+                    <th class="column-title">状态 </th>
+                    <th class="column-title no-link last"><span class="nobr">操作</span>
+                    </th>
+                    <th class="bulk-actions" colspan="7">
+                      <a class="antoo" style="color:#fff; font-weight:500;">Bulk Actions ( <span class="action-cnt"> </span> ) <i class="fa fa-chevron-down"></i></a>
+                    </th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <!-- <tr>
+                    <td class="a-center ">
+                      <input type="checkbox" class="flat" name="table_records">
+                    </td>
+                    <td class=" ">253</td>
+                    <td class=" "><img src="https://avatars0.githubusercontent.com/u/24318409?s=70&v=4" alt=""></td>
+                    <td class=" ">李龙</td>
+                    <td class=" ">13297963625</td>
+                    <td class="">llqhz@qq.com</td>
+                    <td class="td-mw"> abcdef123456 </td>
+                    <td class="">2018-02-05 <br> 14:56:45</td>
+                    <td class="">超级管理员</td>
+                    <td class=" "><a href="#" class="text-success">正常</a></td>
+                    <td class=" last">
+                        <a href="#" title="编辑"><i class="fa fa-edit"></i> </a> |
+                        <a href="#" title="删除"><i class="fa fa-remove"></i> </a>
+                    </td>
+                  </tr> -->
+                  <foreach name='lists' item='li'>
+                  <tr>
+                    <td class="a-center ">
+                      <input type="checkbox" class="flat" name="table_records">
+                    </td>
+                    <td class=" ">{$li.id}</td>
+                    <td class=" "><img src="{$li.img}" alt=""></td>
+                    <td class=" ">{$li.name}</td>
+                    <td class=" ">{$li.mobile}</td>
+                    <td class="">{$li.email}</td>
+                    <td class="td-mw"> {$li.password} </td>
+                    <td class="">{:date('Y-m-d<b\\r>H:i:s',$li['ctime'])}</td>
+                    <td class="">超级管理员</td>
+                    <td class=" ">
+                      <switch name='li["status"]'>
+                        <case value='1'><a href="#" class="text-success changeStatus">正常</a></case>
+                        <case value='0'><a href="#" class="text-warning changeStatus">已禁用</a></case>
+                      </switch>
+                    </td>
+                    <td class=" last">
+                        <a href="#" class="td-edit" title="编辑"><i class="fa fa-edit"></i> </a> |
+                        <a href="#" class="td-remove" title="删除"><i class="fa fa-remove"></i> </a>
+                    </td>
+                  </tr>
+                  </foreach>
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</block>
+<block name="link-end">
+  <script>
+    $(function(){
+      var app_list = {
+        data: {
+          changeStatusUrl : '{:U("user/changeStatus")}',
+          removeUserUrl : '{:U("user/removeUser")}',
+          searchWordUrl : '{:U("user/nlists",["word"=>"__WORD__"])}',
+          editUserUrl : '{:U("user/editUser",["id"=>"__ID__"])}',
+        },
+        init: function(){
+          this.eventInit();
+        },
+        eventInit: function(){
+          var app_list = this;
+          //监控 table ->正常 状态改变
+          $('.changeStatus').click(function(event) {
+              var element = this;
+              var options = {
+                  title: '更改状态',
+                  text: '确定要更改状态?',
+                  confirm: function () {
+                      app_list.changeStatus(element);
+                  }
+              };
+              ll.tips(options);
+          });
+
+          //监控 table ->td 删除
+          $('.td-remove').click(function(event) {
+              var element = this;
+              var options = {
+                  title: '删除确认',
+                  text: '删除该新闻?',
+                  confirm: function () {
+                      app_list.removeNews(element);
+                  }
+              };
+              ll.tips(options);
+          });
+
+          $("#update-order").on('click', function(event) {
+            event.preventDefault();
+            /* Act on the event */
+            app_list.updateOrder();
+          });
+
+          //监控 table ->td 编辑
+          $('.td-edit').click(function(event) {
+              var id = $(this).parents('tr').data('id');
+              var url = app_list.data.editNewsUrl;
+              url = url.replace(/__ID__/g,id);
+              window.location.href = url;
+          });
+
+          $("#search-btn").on('click', function(event) {
+            event.preventDefault();
+            /* Act on the event */
+            app_list.searchWord();
+          });
+        },
+        changeStatus:function(elm){
+          var id = $(elm).parents('tr').data('id');
+          var ops = {};
+          ll.ajax({
+            url: app_list.data.changeStatusUrl,
+            data: {id: id},
+            async: false,
+            success: function () {
+              ops.text = '更改成功';
+              ops.color = 'success';
+              ops.reload = true;
+            },
+            error: function(){
+              ops.text = '更改失败';
+            },
+          });
+          ll.alert(ops);
+        },
+        removeNews:function(elm){
+          var id = $(elm).parents('tr').data('id');
+          var ops = {};
+          ll.ajax({
+            url: app_list.data.removeNewsUrl,
+            data: {id: id},
+            async: false,
+            success: function () {
+              ops.text = '删除成功';
+              ops.color = 'success';
+              ops.reload = true;
+            },
+            error: function(res){
+              ops.text = res.msg;
+            },
+          });
+          ll.alert(ops);
+        },
+        getSelectedData: function(){
+          var trs = $('tbody tr[class*=selected]');
+          var ids = [],ods=[];
+          $.each(trs, function(index, val) {
+             /* iterate through array or object */
+             var id = $(val).data('id');
+             ids.push(id);
+             var od = $(val).find('input[type=number]').val();
+             ods.push(od);
+          });
+          var data = {ids:ids,ods:ods};
+          return data;
+        },
+        updateOrder: function(){
+          var data = app_list.getSelectedData();
+          var op = {};
+          ll.ajax({
+            url: app_list.data.updateOrderUrl,
+            data: data,
+            async: false,
+            success: function(){
+              op.text = '更新排序成功';
+              op.color = 'success';
+              op.reload = true;
+            },
+            error: function(res){
+              op.text = res.msg;
+            }
+          });
+          ll.alert(op);
+        },
+        deleteAll: function(){
+          var data = app_list.getSelectedData();
+          var op = {};
+          ll.ajax({
+            url: app_list.data.deleteAllUrl,
+            data: data,
+            async: false,
+            success: function(){
+              op.text = '批量删除成功';
+              op.color = 'success';
+              op.reload = true;
+            },
+            error: function(res){
+              op.text = res.msg;
+            }
+          });
+          ll.alert(op);
+        },
+        searchWord: function(){
+          var word = $("#searchWord").val();
+          var url = app_list.data.searchWordUrl;
+          if ( word.length <= 1 ) {
+            word = 0;
+          };
+              url = url.replace(/__WORD__/g,word+'/__TIME__');
+          var t_start = $('#time-start').val();
+          var t_end  = $('#time-end').val();
+          var t_s = Number( Date.parse(t_start) );
+          var t_e = Number( Date.parse(t_end) );
+          if ( isNaN(t_s) ) {
+            t_s = 0;
+          }
+          if ( isNaN(t_e) ) {
+            t_e = 0;
+          };
+          url = url.replace(/__TIME__/g,'t_s/'+t_s+'/t_e/'+t_e);
+          window.location.href = url;
+        },
+        viewNews: function(id){
+          var content = '',op={ title: '新闻预览' };
+          ll.ajax({
+            url: app_list.data.viewNewsUrl,
+            data: {id: id},
+            async: false,
+            success: function(data){
+              op.text = data.content;
+              op.size = 'lg';
+              $("#ll-modal-text").removeClass('text-center');
+              $("#ll-modal-text").removeAttr('style');
+
+            },
+            error: function(res){
+              op.text = '预览出错,请稍后再试';
+            }
+          });
+          ll.tips(op);
+        },
+        refreshNews:function(id){
+          ll.ajax({
+            url: app_list.data.refreshNewsUrl,
+            data: {id: id},
+            success: function () {
+              var ops = {};
+              ops.text = '更改成功';
+              ops.color = 'success';
+              ops.reload = true;
+              ll.alert(ops);
+            },
+            error: function(){
+              var ops = {};
+              ops.text = '更改失败';
+              ll.alert(ops);
+            },
+          });
+        }
+
+      };
+      app_list.init();
+    });
+  </script>
+</block>

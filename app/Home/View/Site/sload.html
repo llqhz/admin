@@ -1,0 +1,369 @@
+<extend name="Template/base" />
+<block name="main">
+<div class="row">
+  <div class="col-md-12 col-sm-12 col-xs-12">
+    <div class="x_panel">
+        <div class="x_title">
+          <h2><i class="fa fa-align-left"></i> 网站管理 /  <small>数据更新</small></h2>
+          <ul class="nav navbar-right panel_toolbox">
+            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+            </li>
+            <li><a class="close-link"><i class="fa fa-close"></i></a>
+            </li>
+          </ul>
+          <div class="clearfix"></div>
+        </div>
+        <div class="x_content">
+
+          <!-- start accordion -->
+          <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel">
+              <a class="panel-heading" role="tab" id="headingOne" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <h4 class="panel-title">主页</h4>
+              </a>
+              <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true" style="">
+                <div class="panel-body">
+                  <h5> 最新新闻  </h5>
+                  <table class="table table-striped table-bordered  table-condensed table-hover "  style="">
+                    <thead>
+                      <tr class="headings">
+                        <th class="column-title">Id </th>
+                        <th class="column-title">标题 </th>
+                        <th class="column-title">描述 </th>
+                        <th class="column-title">缩略图 </th>
+                        <th class="column-title">链接 </th>
+                        <th class="column-title">发布时间 </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                       <empty name="lnews">
+                        <tr>
+                          <td class="text-center" colspan="5" rowspan="" headers="">
+                              没有找到相关记录
+                          </td>
+                        </tr>
+                      </empty>
+                      <foreach name="lnews" item="li">
+                      <tr data-id="{$li.id}">
+                        <td class=" ">{$li.id}</td>
+                        <td class=" td-mw">{$li.title}</td>
+                        <td class=" td-mw">{$li.desc}</td>
+                        <td class=" ">
+                          <img src="{$li['imgUrl']}" alt="">
+                        </td>
+                        <td class="td-mw">{$li.detailUrl}</td>
+                        <td class="td-mw">{$li['time']}</td>
+                      </tr>
+                      </foreach>
+                    </tbody>
+                  </table>
+                  <h5> 最新案例  </h5>
+                  <table class="table table-striped table-bordered  table-condensed table-hover "  style="">
+                    <thead>
+                      <tr class="headings">
+                        <th class="column-title">Id </th>
+                        <th class="column-title">标题 </th>
+                        <th class="column-title">描述 </th>
+                        <th class="column-title">图片 </th>
+                        <th class="column-title">案例链接 </th>
+                        <th class="column-title">发布时间 </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <empty name="lcases">
+                        <tr>
+                          <td class="text-center" colspan="11" rowspan="" headers="">
+                              没有找到相关记录
+                          </td>
+                        </tr>
+                      </empty>
+                      <foreach name="lcases" item="li">
+                      <tr data-id="{$li.id}">
+                        <td class=" ">{$li.id}</td>
+                        <td class="td-mw" >{$li.title}</td>
+                        <td class="td-mw" >{$li.desc}</td>
+                        <td class=" "><img src="{$li['imgUrl']}" alt="{$li['imgUrl']}"></td>
+                        <td class="td-mw">{$li.caseUrl}</td>
+                        <td class="td-mw">{:date('Y-m-d <b\\r> H:i:s',$li['ctime'])}</td>
+                      </tr>
+                      </foreach>
+                    </tbody>
+                  </table>
+                  <div class="ln_solid"></div>
+                  <p>
+                      <button type='button' id="update-index" class="btn btn-sm btn-info">更新首页</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="panel">
+              <a class="panel-heading collapsed" role="tab" id="headingTwo" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <h4 class="panel-title">新闻中心</h4>
+              </a>
+              <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false" style="height: 0px;">
+                <div class="panel-body">
+                  <h5> 最新5条新闻  </h5>
+                  <table class="table table-striped table-bordered  table-condensed table-hover "  style="">
+                    <thead>
+                      <tr class="headings">
+                        <th class="column-title">Id </th>
+                        <th class="column-title">标题 </th>
+                        <th class="column-title">描述 </th>
+                        <th class="column-title">缩略图 </th>
+                        <th class="column-title">链接 </th>
+                        <th class="column-title">发布时间 </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                       <empty name="news">
+                        <tr>
+                          <td class="text-center" colspan="5" rowspan="" headers="">
+                              没有找到相关记录
+                          </td>
+                        </tr>
+                      </empty>
+                      <foreach name="news" item="li">
+                      <tr data-id="{$li.id}">
+                        <td class=" ">{$li.id}</td>
+                        <td class=" td-mw">{$li.title}</td>
+                        <td class=" td-mw">{$li.desc}</td>
+                        <td class=" ">
+                          <img src="{$li['imgUrl']}" alt="">
+                        </td>
+                        <td class="td-mw">{$li.detailUrl}</td>
+                        <td class="td-mw">{$li['time']}</td>
+                      </tr>
+                      </foreach>
+                    </tbody>
+                  </table>
+                  <div class="ln_solid"></div>
+                  <p>
+                    <button type='button' id="update-news" class="btn btn-sm btn-info">更新新闻中心</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="panel">
+              <a class="panel-heading collapsed" role="tab" id="headingThree" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <h4 class="panel-title">案例展示</h4>
+              </a>
+              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false" style="height: 0px;">
+                <div class="panel-body">
+                  <h5>最新9个案例</h5>
+                  <table class="table table-striped table-bordered  table-condensed table-hover "  style="">
+                    <thead>
+                      <tr class="headings">
+                        <th class="column-title">Id </th>
+                        <th class="column-title">标题 </th>
+                        <th class="column-title">描述 </th>
+                        <th class="column-title">图片 </th>
+                        <th class="column-title">案例链接 </th>
+                        <th class="column-title">发布时间 </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <empty name="cases">
+                        <tr>
+                          <td class="text-center" colspan="11" rowspan="" headers="">
+                              没有找到相关记录
+                          </td>
+                        </tr>
+                      </empty>
+                      <foreach name="cases" item="li">
+                      <tr data-id="{$li.id}">
+                        <td class=" ">{$li.id}</td>
+                        <td class="td-mw" >{$li.title}</td>
+                        <td class="td-mw" >{$li.desc}</td>
+                        <td class=" "><img src="{$li['imgUrl']}" alt="{$li['imgUrl']}"></td>
+                        <td class="td-mw">{$li.caseUrl}</td>
+                        <td class="td-mw">{:date('Y-m-d <b\\r> H:i:s',$li['ctime'])}</td>
+                      </tr>
+                      </foreach>
+                    </tbody>
+                  </table>
+                  <div class="ln_solid"></div>
+                  <p>
+                      <button type='button' id="update-cases" class="btn btn-sm btn-info">更新案例</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="panel">
+              <a class="panel-heading collapsed" role="tab" id="headingFour" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <h4 class="panel-title">新闻 / 加载更多</h4>
+              </a>
+              <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour" aria-expanded="false" style="height: 0px;">
+                <div class="panel-body">
+                  <h5> 新闻顺序  </h5>
+                  <table class="table table-striped table-bordered  table-condensed table-hover "  style="">
+                    <tbody>
+                       <empty name="news">
+                        <tr>
+                          <td class="text-center" colspan="6" rowspan="" headers="">
+                              没有找到相关记录
+                          </td>
+                        </tr>
+                      </empty>
+                      <tr>
+                      <foreach name="ids" key='k' item="li">
+                        <td class=" ">{$li}</td>
+                        <php>
+                          if ( (($k+1) % 20) == 0  ) {
+                            echo '</tr>';
+                            if ( ($k) != count($ids) ) {
+                              echo '<tr>';
+                            }
+                          }
+                        </php>
+                      </foreach>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="ln_solid"></div>
+                  <p>
+                    <button type='button' id="update-nexts" class="btn btn-sm btn-info">更新顺序</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end of accordion -->
+          <div class="ln_solid"></div>
+          <p>
+              <button type='button' id="update-all" class="btn btn-md btn-success"> 更新全部 </button>
+          </p>
+        </div>
+      </div>
+  </div>
+</div>
+</block>
+<block name="link-end">
+  <script type="text/javascript">
+    $(function(){
+      var app = {
+        data: {
+          updateIndexUrl: "{:U('site/updateIndex')}",
+          updateNewsUrl : "{:U('site/updateNews')}",
+          updateCasesUrl : "{:U('site/updateCases')}",
+          updateNewsNexts : "{:U('site/updateNewsNexts')}",
+          updateAll: "{:U('site/updateAll')}",
+        },
+        init: function(){
+          this.eventInit();
+        },
+        eventInit: function(){
+          var app = this;
+
+          $("#update-index").on('click', function(event) {
+            event.preventDefault();
+            /* Act on the event */
+            app.updateIndex();
+          });
+          $("#update-news").on('click', function(event) {
+            event.preventDefault();
+            /* Act on the event */
+            app.updateNews();
+          });
+          $("#update-cases").on('click', function(event) {
+            event.preventDefault();
+            /* Act on the event */
+            app.updateCases();
+          });
+          $("#update-nexts").on('click', function(event) {
+            event.preventDefault();
+            /* Act on the event */
+            app.updateNewsNexts();
+          });
+          $("#update-all").on('click', function(event) {
+            event.preventDefault();
+            /* Act on the event */
+            app.updateAll();
+          });
+
+        },
+        updateIndex : function(){
+          var url = app.data.updateIndexUrl;
+          ll.ajax({
+            url: url,
+            success: function(){
+              ll.alert({
+                text: '更新成功',
+                color: 'success',
+                reload: true
+              });
+            },
+            error: function(){
+              ll.alert({'text':'更新失败'});
+            }
+          });
+        },
+        updateNews : function(){
+          var url = app.data.updateNewsUrl;
+          ll.ajax({
+            url: url,
+            success: function(){
+              ll.alert({
+                text: '更新成功',
+                color: 'success',
+                reload: true
+              });
+            },
+            error: function(){
+              ll.alert({'text':'更新失败'});
+            }
+          });
+        },
+        updateCases : function(){
+          var url = app.data.updateCasesUrl;
+          ll.ajax({
+            url: url,
+            success: function(){
+              ll.alert({
+                text: '更新成功',
+                color: 'success',
+                reload: true
+              });
+            },
+            error: function(){
+              ll.alert({'text':'更新失败'});
+            }
+          });
+        },
+        updateNewsNexts : function(){
+          var url = app.data.updateNewsNexts;
+          ll.ajax({
+            url: url,
+            success: function(){
+              ll.alert({
+                text: '更新成功',
+                color: 'success',
+                reload: true
+              });
+            },
+            error: function(){
+              ll.alert({'text':'更新失败'});
+            }
+          });
+        },
+        updateAll : function(){
+          var url = app.data.updateAll;
+          ll.ajax({
+            url: url,
+            success: function(){
+              ll.alert({
+                text: '更新成功',
+                color: 'success',
+                reload: true
+              });
+            },
+            error: function(){
+              ll.alert({'text':'更新失败'});
+            }
+          });
+        },
+
+      };
+      app.init();
+    });
+  </script>
+</block>
