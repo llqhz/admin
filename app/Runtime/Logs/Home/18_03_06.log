@@ -1,0 +1,1641 @@
+[ 2018-03-06T09:37:34+08:00 ] ::1 /index.php/cases/cadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `wckj_category` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `wckj_category` WHERE ( concat(",",path) like "%,1,%" ) ORDER BY corder desc  [ RunTime:0.0280s ]
+SQL: SELECT * FROM `wckj_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0260s ]
+SQL: SELECT * FROM `wckj_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0250s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.014001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.014001s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\b630d7d3b4eebe84c45ae631a465fb1b.php 第 162 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\b630d7d3b4eebe84c45ae631a465fb1b.php 第 171 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\b630d7d3b4eebe84c45ae631a465fb1b.php 第 179 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\b630d7d3b4eebe84c45ae631a465fb1b.php 第 187 行.
+NOTIC: [8] Undefined variable: li E:\wamp\www\admin\app\Runtime\Cache\Home\b630d7d3b4eebe84c45ae631a465fb1b.php 第 345 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T09:37:36+08:00 ] ::1 /index.php/cases/images/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-06T09:37:39+08:00 ] ::1 /index.php/cases/clists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wckj_cases` [ RunTime:0.0250s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wckj_cases` WHERE (  (  1 ) ) LIMIT 1   [ RunTime:0.0230s ]
+SQL: SELECT * FROM `wckj_cases` WHERE (  (  1 ) ) ORDER BY  corder desc  LIMIT 0,15   [ RunTime:0.0230s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\7d4e9a32711295d5cb9c072a0e593a38.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\7d4e9a32711295d5cb9c072a0e593a38.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\7d4e9a32711295d5cb9c072a0e593a38.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\7d4e9a32711295d5cb9c072a0e593a38.php 第 174 行.
+NOTIC: [8] Undefined index: word E:\wamp\www\admin\app\Runtime\Cache\Home\7d4e9a32711295d5cb9c072a0e593a38.php 第 258 行.
+SQL: SHOW COLUMNS FROM `wckj_category` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `wckj_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0240s ]
+SQL: SELECT * FROM `wckj_category` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0230s ]
+SQL: SELECT * FROM `wckj_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0240s ]
+SQL: SELECT * FROM `wckj_category` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0230s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.153009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.153009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T09:37:41+08:00 ] ::1 /index.php/cases/cadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `wckj_category` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `wckj_category` WHERE ( concat(",",path) like "%,1,%" ) ORDER BY corder desc  [ RunTime:0.0530s ]
+SQL: SELECT * FROM `wckj_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0250s ]
+SQL: SELECT * FROM `wckj_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0250s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\b630d7d3b4eebe84c45ae631a465fb1b.php 第 162 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\b630d7d3b4eebe84c45ae631a465fb1b.php 第 171 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\b630d7d3b4eebe84c45ae631a465fb1b.php 第 179 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\b630d7d3b4eebe84c45ae631a465fb1b.php 第 187 行.
+NOTIC: [8] Undefined variable: li E:\wamp\www\admin\app\Runtime\Cache\Home\b630d7d3b4eebe84c45ae631a465fb1b.php 第 345 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-06T09:37:42+08:00 ] ::1 /index.php/cases/citems.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `wckj_cases` [ RunTime:0.0250s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wckj_cases` WHERE `status` = 1 AND (  (  1 ) ) LIMIT 1   [ RunTime:0.0520s ]
+SQL: SELECT * FROM `wckj_cases` WHERE `status` = 1 AND (  (  1 ) ) ORDER BY  corder desc  LIMIT 0,15   [ RunTime:0.0250s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\61d9734a2b6427374fd698ce69fd5dbe.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\61d9734a2b6427374fd698ce69fd5dbe.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\61d9734a2b6427374fd698ce69fd5dbe.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\61d9734a2b6427374fd698ce69fd5dbe.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T09:37:44+08:00 ] ::1 /index.php/cases/clists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wckj_cases` [ RunTime:0.0280s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wckj_cases` WHERE (  (  1 ) ) LIMIT 1   [ RunTime:0.0600s ]
+SQL: SELECT * FROM `wckj_cases` WHERE (  (  1 ) ) ORDER BY  corder desc  LIMIT 0,15   [ RunTime:0.0240s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\7d4e9a32711295d5cb9c072a0e593a38.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\7d4e9a32711295d5cb9c072a0e593a38.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\7d4e9a32711295d5cb9c072a0e593a38.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\7d4e9a32711295d5cb9c072a0e593a38.php 第 174 行.
+NOTIC: [8] Undefined index: word E:\wamp\www\admin\app\Runtime\Cache\Home\7d4e9a32711295d5cb9c072a0e593a38.php 第 258 行.
+SQL: SHOW COLUMNS FROM `wckj_category` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `wckj_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0240s ]
+SQL: SELECT * FROM `wckj_category` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0240s ]
+SQL: SELECT * FROM `wckj_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0250s ]
+SQL: SELECT * FROM `wckj_category` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0250s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.149008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.149008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-03-06T09:37:52+08:00 ] ::1 /index.php/user/ulists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0260s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wckj_user` LIMIT 1   [ RunTime:0.0260s ]
+SQL: SELECT * FROM `wckj_user` ORDER BY ctime asc LIMIT 0,15   [ RunTime:0.0260s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-06T09:37:53+08:00 ] ::1 /index.php/user/images/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T09:38:36+08:00 ] ::1 /index.php/user/uadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\e1cf5d57747238ce20a71735202310f1.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\e1cf5d57747238ce20a71735202310f1.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\e1cf5d57747238ce20a71735202310f1.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\e1cf5d57747238ce20a71735202310f1.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T09:38:43+08:00 ] ::1 /index.php/user/ulists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0260s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wckj_user` LIMIT 1   [ RunTime:0.0240s ]
+SQL: SELECT * FROM `wckj_user` ORDER BY ctime asc LIMIT 0,15   [ RunTime:0.0260s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T09:39:03+08:00 ] ::1 /index.php/user/uadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\e1cf5d57747238ce20a71735202310f1.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\e1cf5d57747238ce20a71735202310f1.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\e1cf5d57747238ce20a71735202310f1.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\e1cf5d57747238ce20a71735202310f1.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T09:39:04+08:00 ] ::1 /index.php/user/ulists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0270s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wckj_user` LIMIT 1   [ RunTime:0.0250s ]
+SQL: SELECT * FROM `wckj_user` ORDER BY ctime asc LIMIT 0,15   [ RunTime:0.0260s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T09:39:06+08:00 ] ::1 /index.php/user/uadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\e1cf5d57747238ce20a71735202310f1.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\e1cf5d57747238ce20a71735202310f1.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\e1cf5d57747238ce20a71735202310f1.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\e1cf5d57747238ce20a71735202310f1.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-03-06T09:39:07+08:00 ] ::1 /index.php/user/ulists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0260s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wckj_user` LIMIT 1   [ RunTime:0.0260s ]
+SQL: SELECT * FROM `wckj_user` ORDER BY ctime asc LIMIT 0,15   [ RunTime:0.0270s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T09:39:12+08:00 ] ::1 /index.php/user/uadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\e1cf5d57747238ce20a71735202310f1.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\e1cf5d57747238ce20a71735202310f1.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\e1cf5d57747238ce20a71735202310f1.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\e1cf5d57747238ce20a71735202310f1.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T09:39:13+08:00 ] ::1 /index.php/user/ulists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0260s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wckj_user` LIMIT 1   [ RunTime:0.0250s ]
+SQL: SELECT * FROM `wckj_user` ORDER BY ctime asc LIMIT 0,15   [ RunTime:0.0260s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T09:40:00+08:00 ] ::1 /index.php/user/ulists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0260s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wckj_user` LIMIT 1   [ RunTime:0.0260s ]
+SQL: SELECT * FROM `wckj_user` ORDER BY ctime asc LIMIT 0,15   [ RunTime:0.0250s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T09:40:52+08:00 ] ::1 /index.php/user/ulists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0240s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wckj_user` LIMIT 1   [ RunTime:0.0240s ]
+SQL: SELECT * FROM `wckj_user` ORDER BY ctime asc LIMIT 0,15   [ RunTime:0.0260s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T09:40:56+08:00 ] ::1 /index.php/user/nlists/word/222/t_s/0/t_e/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:nlists
+
+[ 2018-03-06T09:40:56+08:00 ] ::1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T09:41:30+08:00 ] ::1 /index.php/user/ulists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0260s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wckj_user` LIMIT 1   [ RunTime:0.0260s ]
+SQL: SELECT * FROM `wckj_user` ORDER BY ctime asc LIMIT 0,15   [ RunTime:0.0650s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T09:41:33+08:00 ] ::1 /index.php/user/ulists/word/333/t_s/0/t_e/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0270s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wckj_user` LIMIT 1   [ RunTime:0.0270s ]
+SQL: SELECT * FROM `wckj_user` ORDER BY ctime asc LIMIT 0,15   [ RunTime:0.0270s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T09:41:33+08:00 ] ::1 /index.php/user/ulists/word/333/t_s/0/t_e/images/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T09:42:10+08:00 ] ::1 /index.php/user/ulists/word/333/t_s/0/t_e/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0260s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wckj_user` LIMIT 1   [ RunTime:0.0260s ]
+SQL: SELECT * FROM `wckj_user` ORDER BY ctime asc LIMIT 0,15   [ RunTime:0.0260s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T09:42:13+08:00 ] ::1 /index.php/user/ulists/word/555.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0250s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wckj_user` LIMIT 1   [ RunTime:0.0250s ]
+SQL: SELECT * FROM `wckj_user` ORDER BY ctime asc LIMIT 0,15   [ RunTime:0.0250s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T09:42:14+08:00 ] ::1 /index.php/user/ulists/word/images/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T09:42:27+08:00 ] ::1 /index.php/user/ulists/word/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0250s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wckj_user` LIMIT 1   [ RunTime:0.0240s ]
+SQL: SELECT * FROM `wckj_user` ORDER BY ctime asc LIMIT 0,15   [ RunTime:0.0240s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T09:42:47+08:00 ] ::1 /index.php/user/ulists/word/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0270s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wckj_user` LIMIT 1   [ RunTime:0.0250s ]
+SQL: SELECT * FROM `wckj_user` ORDER BY ctime asc LIMIT 0,15   [ RunTime:0.0270s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T09:42:52+08:00 ] ::1 /index.php/user/ulists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0260s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wckj_user` LIMIT 1   [ RunTime:0.0260s ]
+SQL: SELECT * FROM `wckj_user` ORDER BY ctime asc LIMIT 0,15   [ RunTime:0.0250s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T09:42:53+08:00 ] ::1 /index.php/user/uadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\e1cf5d57747238ce20a71735202310f1.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\e1cf5d57747238ce20a71735202310f1.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\e1cf5d57747238ce20a71735202310f1.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\e1cf5d57747238ce20a71735202310f1.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T09:42:54+08:00 ] ::1 /index.php/user/ulists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0250s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wckj_user` LIMIT 1   [ RunTime:0.0250s ]
+SQL: SELECT * FROM `wckj_user` ORDER BY ctime asc LIMIT 0,15   [ RunTime:0.0250s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T09:43:15+08:00 ] ::1 /index.php/user/ulists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0260s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wckj_user` LIMIT 1   [ RunTime:0.0260s ]
+SQL: SELECT * FROM `wckj_user` ORDER BY ctime asc LIMIT 0,15   [ RunTime:0.0250s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T09:43:36+08:00 ] ::1 /index.php/user/uadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\e1cf5d57747238ce20a71735202310f1.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\e1cf5d57747238ce20a71735202310f1.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\e1cf5d57747238ce20a71735202310f1.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\e1cf5d57747238ce20a71735202310f1.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T09:43:37+08:00 ] ::1 /index.php/user/ulists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0260s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wckj_user` LIMIT 1   [ RunTime:0.0240s ]
+SQL: SELECT * FROM `wckj_user` ORDER BY ctime asc LIMIT 0,15   [ RunTime:0.0260s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T09:46:02+08:00 ] ::1 /index.php/user/ulists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0260s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wckj_user` LIMIT 1   [ RunTime:0.0250s ]
+SQL: SELECT * FROM `wckj_user` ORDER BY ctime asc LIMIT 0,15   [ RunTime:0.0250s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T09:46:15+08:00 ] ::1 /index.php/user/changeStatus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0260s ]
+SQL: SELECT * FROM `wckj_user` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0260s ]
+
+[ 2018-03-06T09:46:50+08:00 ] ::1 /index.php/user/ulists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0280s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wckj_user` LIMIT 1   [ RunTime:0.0270s ]
+SQL: SELECT * FROM `wckj_user` ORDER BY ctime asc LIMIT 0,15   [ RunTime:0.0430s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T09:46:53+08:00 ] ::1 /index.php/user/changeStatus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `wckj_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0250s ]
+SQL: UPDATE `wckj_user` SET `status`='0' WHERE `id` = 1 [ RunTime:0.0260s ]
+
+[ 2018-03-06T09:46:55+08:00 ] ::1 /index.php/user/ulists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0260s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wckj_user` LIMIT 1   [ RunTime:0.0250s ]
+SQL: SELECT * FROM `wckj_user` ORDER BY ctime asc LIMIT 0,15   [ RunTime:0.0270s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T09:46:58+08:00 ] ::1 /index.php/user/changeStatus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0260s ]
+SQL: SELECT * FROM `wckj_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0350s ]
+SQL: UPDATE `wckj_user` SET `status`='1' WHERE `id` = 1 [ RunTime:0.0290s ]
+
+[ 2018-03-06T09:47:01+08:00 ] ::1 /index.php/user/ulists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0260s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wckj_user` LIMIT 1   [ RunTime:0.0260s ]
+SQL: SELECT * FROM `wckj_user` ORDER BY ctime asc LIMIT 0,15   [ RunTime:0.0250s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T09:47:43+08:00 ] ::1 /index.php/user/changeStatus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `wckj_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0260s ]
+SQL: UPDATE `wckj_user` SET `status`='0' WHERE `id` = 1 [ RunTime:0.0270s ]
+
+[ 2018-03-06T09:47:45+08:00 ] ::1 /index.php/user/ulists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0260s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wckj_user` LIMIT 1   [ RunTime:0.0250s ]
+SQL: SELECT * FROM `wckj_user` ORDER BY ctime asc LIMIT 0,15   [ RunTime:0.0250s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T09:47:48+08:00 ] ::1 /index.php/user/changeStatus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0260s ]
+SQL: SELECT * FROM `wckj_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0260s ]
+SQL: UPDATE `wckj_user` SET `status`='1' WHERE `id` = 1 [ RunTime:0.0260s ]
+
+[ 2018-03-06T09:47:51+08:00 ] ::1 /index.php/user/ulists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0250s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wckj_user` LIMIT 1   [ RunTime:0.0270s ]
+SQL: SELECT * FROM `wckj_user` ORDER BY ctime asc LIMIT 0,15   [ RunTime:0.0250s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2018-03-06T09:48:01+08:00 ] ::1 /index.php/user/uadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\e1cf5d57747238ce20a71735202310f1.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\e1cf5d57747238ce20a71735202310f1.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\e1cf5d57747238ce20a71735202310f1.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\e1cf5d57747238ce20a71735202310f1.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T09:48:03+08:00 ] ::1 /index.php/user/ulists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0250s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wckj_user` LIMIT 1   [ RunTime:0.0260s ]
+SQL: SELECT * FROM `wckj_user` ORDER BY ctime asc LIMIT 0,15   [ RunTime:0.0240s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T09:48:11+08:00 ] ::1 /index.php/site/sload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: data_dir E:\wamp\www\admin\app\Home\Controller\SiteController.class.php 第 9 行.
+NOTIC: [2] mkdir(): File exists E:\wamp\www\admin\app\Home\Controller\SiteController.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `wckj_cases` [ RunTime:0.0270s ]
+SQL: SHOW COLUMNS FROM `wckj_news` [ RunTime:0.0250s ]
+SQL: SELECT `id`,`title`,detail as "desc",`img`,ctime as time FROM `wckj_news` WHERE ( status = 1 ) LIMIT 2   [ RunTime:0.0280s ]
+NOTIC: [8] Undefined variable: id E:\wamp\www\admin\app\Home\Model\NewsModel.class.php 第 217 行.
+NOTIC: [8] Undefined variable: id E:\wamp\www\admin\app\Home\Model\NewsModel.class.php 第 217 行.
+SQL: SELECT `id`,`title`,`ctime`,detail as "desc",img as imgUrl,link as caseUrl FROM `wckj_cases` WHERE `status` = 1 ORDER BY  corder desc  LIMIT 3   [ RunTime:0.0280s ]
+SQL: SELECT `id`,`title`,detail as "desc",`img`,ctime as time FROM `wckj_news` WHERE ( status = 1 ) LIMIT 10   [ RunTime:0.0250s ]
+NOTIC: [8] Undefined variable: id E:\wamp\www\admin\app\Home\Model\NewsModel.class.php 第 217 行.
+NOTIC: [8] Undefined variable: id E:\wamp\www\admin\app\Home\Model\NewsModel.class.php 第 217 行.
+NOTIC: [8] Undefined variable: id E:\wamp\www\admin\app\Home\Model\NewsModel.class.php 第 217 行.
+SQL: SELECT `id`,`title`,`ctime`,detail as "desc",img as imgUrl,link as caseUrl FROM `wckj_cases` WHERE `status` = 1 ORDER BY  corder desc  LIMIT 9   [ RunTime:0.0250s ]
+SQL: SELECT `id` FROM `wckj_news` WHERE ( status=1 ) ORDER BY corder desc  [ RunTime:0.0260s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\9fb44086c4d6f064857348f2283d60f6.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\9fb44086c4d6f064857348f2283d60f6.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\9fb44086c4d6f064857348f2283d60f6.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\9fb44086c4d6f064857348f2283d60f6.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T09:48:11+08:00 ] ::1 /index.php/site/images/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T09:48:16+08:00 ] ::1 /index.php/user/ulists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0270s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wckj_user` LIMIT 1   [ RunTime:0.0260s ]
+SQL: SELECT * FROM `wckj_user` ORDER BY ctime asc LIMIT 0,15   [ RunTime:0.0250s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T09:50:31+08:00 ] ::1 /index.php/user/ulists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0260s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wckj_user` LIMIT 1   [ RunTime:0.0260s ]
+SQL: SELECT * FROM `wckj_user` ORDER BY ctime asc LIMIT 0,15   [ RunTime:0.0260s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T09:50:35+08:00 ] ::1 /index.php/user/changeStatus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0440s ]
+SQL: SELECT * FROM `wckj_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0270s ]
+NOTIC: [8] Undefined variable: status E:\wamp\www\admin\app\Home\Model\UserModel.class.php 第 47 行.
+SQL: UPDATE `wckj_user` SET `status`=NULL WHERE `id` = 1 [ RunTime:0.0260s ]
+
+[ 2018-03-06T09:50:37+08:00 ] ::1 /index.php/user/ulists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0260s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wckj_user` LIMIT 1   [ RunTime:0.0260s ]
+SQL: SELECT * FROM `wckj_user` ORDER BY ctime asc LIMIT 0,15   [ RunTime:0.0260s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T09:51:13+08:00 ] ::1 /index.php/user/ulists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0270s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wckj_user` LIMIT 1   [ RunTime:0.0270s ]
+SQL: SELECT * FROM `wckj_user` ORDER BY ctime asc LIMIT 0,15   [ RunTime:0.0250s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T09:51:17+08:00 ] ::1 /index.php/user/changeStatus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `wckj_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0260s ]
+NOTIC: [8] Undefined variable: status E:\wamp\www\admin\app\Home\Model\UserModel.class.php 第 47 行.
+SQL: UPDATE `wckj_user` SET `status`=NULL WHERE `id` = 1 [ RunTime:0.0330s ]
+
+[ 2018-03-06T09:51:20+08:00 ] ::1 /index.php/user/ulists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0250s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wckj_user` LIMIT 1   [ RunTime:0.0240s ]
+SQL: SELECT * FROM `wckj_user` ORDER BY ctime asc LIMIT 0,15   [ RunTime:0.0240s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T09:53:11+08:00 ] ::1 /index.php/user/ulists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0280s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wckj_user` LIMIT 1   [ RunTime:0.0270s ]
+SQL: SELECT * FROM `wckj_user` ORDER BY ctime asc LIMIT 0,15   [ RunTime:0.0280s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T09:53:14+08:00 ] ::1 /index.php/user/changeStatus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `wckj_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0270s ]
+NOTIC: [8] Undefined variable: status E:\wamp\www\admin\app\Home\Model\UserModel.class.php 第 47 行.
+SQL: UPDATE `wckj_user` SET `status`=NULL WHERE `id` = 1 [ RunTime:0.0270s ]
+
+[ 2018-03-06T09:53:17+08:00 ] ::1 /index.php/user/ulists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0270s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wckj_user` LIMIT 1   [ RunTime:0.0260s ]
+SQL: SELECT * FROM `wckj_user` ORDER BY ctime asc LIMIT 0,15   [ RunTime:0.0270s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T09:53:21+08:00 ] ::1 /index.php/user/ulists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0260s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wckj_user` LIMIT 1   [ RunTime:0.0260s ]
+SQL: SELECT * FROM `wckj_user` ORDER BY ctime asc LIMIT 0,15   [ RunTime:0.0260s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T09:53:23+08:00 ] ::1 /index.php/user/changeStatus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0260s ]
+SQL: SELECT * FROM `wckj_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0250s ]
+NOTIC: [8] Undefined variable: status E:\wamp\www\admin\app\Home\Model\UserModel.class.php 第 47 行.
+SQL: UPDATE `wckj_user` SET `status`=NULL WHERE `id` = 1 [ RunTime:0.0280s ]
+
+[ 2018-03-06T09:53:26+08:00 ] ::1 /index.php/user/ulists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0250s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wckj_user` LIMIT 1   [ RunTime:0.0250s ]
+SQL: SELECT * FROM `wckj_user` ORDER BY ctime asc LIMIT 0,15   [ RunTime:0.0250s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T09:53:28+08:00 ] ::1 /index.php/user/changeStatus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `wckj_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0270s ]
+NOTIC: [8] Undefined variable: status E:\wamp\www\admin\app\Home\Model\UserModel.class.php 第 47 行.
+SQL: UPDATE `wckj_user` SET `status`=NULL WHERE `id` = 1 [ RunTime:0.0270s ]
+
+[ 2018-03-06T09:53:31+08:00 ] ::1 /index.php/user/ulists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0320s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wckj_user` LIMIT 1   [ RunTime:0.0270s ]
+SQL: SELECT * FROM `wckj_user` ORDER BY ctime asc LIMIT 0,15   [ RunTime:0.0260s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-03-06T09:53:34+08:00 ] ::1 /index.php/user/changeStatus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `wckj_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0290s ]
+NOTIC: [8] Undefined variable: status E:\wamp\www\admin\app\Home\Model\UserModel.class.php 第 47 行.
+SQL: UPDATE `wckj_user` SET `status`=NULL WHERE `id` = 1 [ RunTime:0.0270s ]
+
+[ 2018-03-06T09:53:37+08:00 ] ::1 /index.php/user/ulists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0360s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wckj_user` LIMIT 1   [ RunTime:0.0260s ]
+SQL: SELECT * FROM `wckj_user` ORDER BY ctime asc LIMIT 0,15   [ RunTime:0.0400s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T09:54:23+08:00 ] ::1 /index.php/user/ulists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0260s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wckj_user` LIMIT 1   [ RunTime:0.0260s ]
+SQL: SELECT * FROM `wckj_user` ORDER BY ctime asc LIMIT 0,15   [ RunTime:0.0250s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T09:54:29+08:00 ] ::1 /index.php/user/ulists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0250s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wckj_user` LIMIT 1   [ RunTime:0.0240s ]
+SQL: SELECT * FROM `wckj_user` ORDER BY ctime asc LIMIT 0,15   [ RunTime:0.0250s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2018-03-06T09:54:33+08:00 ] ::1 /index.php/user/ulists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0260s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wckj_user` LIMIT 1   [ RunTime:0.0250s ]
+SQL: SELECT * FROM `wckj_user` ORDER BY ctime asc LIMIT 0,15   [ RunTime:0.0260s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T09:54:47+08:00 ] ::1 /index.php/user/ulists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0260s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wckj_user` LIMIT 1   [ RunTime:0.0260s ]
+SQL: SELECT * FROM `wckj_user` ORDER BY ctime asc LIMIT 0,15   [ RunTime:0.0260s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T09:54:50+08:00 ] ::1 /index.php/user/changeStatus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `wckj_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0270s ]
+NOTIC: [8] Undefined variable: status E:\wamp\www\admin\app\Home\Model\UserModel.class.php 第 47 行.
+SQL: UPDATE `wckj_user` SET `status`=NULL WHERE `id` = 1 [ RunTime:0.0420s ]
+
+[ 2018-03-06T09:54:52+08:00 ] ::1 /index.php/user/ulists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0280s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wckj_user` LIMIT 1   [ RunTime:0.0250s ]
+SQL: SELECT * FROM `wckj_user` ORDER BY ctime asc LIMIT 0,15   [ RunTime:0.0270s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-03-06T09:55:15+08:00 ] ::1 /index.php/user/ulists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wckj_user` [ RunTime:0.0270s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wckj_user` LIMIT 1   [ RunTime:0.0250s ]
+SQL: SELECT * FROM `wckj_user` ORDER BY ctime asc LIMIT 0,15   [ RunTime:0.0260s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 149 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 158 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 166 行.
+NOTIC: [8] Undefined variable: act E:\wamp\www\admin\app\Runtime\Cache\Home\995d00a9850ad60a5fb07d4c995b7fd5.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

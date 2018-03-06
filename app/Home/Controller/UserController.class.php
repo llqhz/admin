@@ -30,4 +30,19 @@ class UserController extends BaseController
     {
         $this->display();
     }
+
+    public function changeStatus()
+    {
+        $ret = ['code'=>0];
+
+        $Model = D('user');
+        $res = $Model->changeStatus();
+        if ( $res === true ) {
+            $ret['code'] = 1;
+        } else {
+            $ret['msg'] = '更新出错,请稍后再试!';
+        }
+
+        $this->ajaxReturn($ret);
+    }
 }

@@ -255,9 +255,9 @@
       <div class="title_right">
         <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
           <div class="input-group">
-            <input type="text" class="form-control" placeholder="输入关键词">
+            <input type="text" id="searchWord" class="form-control" placeholder="输入关键词">
             <span class="input-group-btn">
-              <button class="btn btn-default" type="button">搜索</button>
+              <button class="btn btn-default" id="search-btn" type="button">搜索</button>
             </span>
           </div>
         </div>
@@ -332,7 +332,7 @@
                         <a href="#" title="删除"><i class="fa fa-remove"></i> </a>
                     </td>
                   </tr> -->
-                  <?php if(is_array($lists)): foreach($lists as $key=>$li): ?><tr>
+                  <?php if(is_array($lists)): foreach($lists as $key=>$li): ?><tr data-id="<?php echo ($li["id"]); ?>">
                     <td class="a-center ">
                       <input type="checkbox" class="flat" name="table_records">
                     </td>
@@ -346,7 +346,8 @@
                     <td class="">超级管理员</td>
                     <td class=" ">
                       <?php switch($li["status"]): case "1": ?><a href="#" class="text-success changeStatus">正常</a><?php break;?>
-                        <?php case "0": ?><a href="#" class="text-warning changeStatus">已禁用</a><?php break; endswitch;?>
+                        <?php default: ?>
+                        <a href="#" class="text-warning changeStatus">已禁用</a><?php endswitch;?>
                     </td>
                     <td class=" last">
                         <a href="#" class="td-edit" title="编辑"><i class="fa fa-edit"></i> </a> |
@@ -629,7 +630,7 @@
         data: {
           changeStatusUrl : '<?php echo U("user/changeStatus");?>',
           removeUserUrl : '<?php echo U("user/removeUser");?>',
-          searchWordUrl : '<?php echo U("user/nlists",["word"=>"__WORD__"]);?>',
+          searchWordUrl : '<?php echo U("user/ulists",["word"=>"__WORD__"]);?>',
           editUserUrl : '<?php echo U("user/editUser",["id"=>"__ID__"]);?>',
         },
         init: function(){
@@ -661,12 +662,6 @@
                   }
               };
               ll.tips(options);
-          });
-
-          $("#update-order").on('click', function(event) {
-            event.preventDefault();
-            /* Act on the event */
-            app_list.updateOrder();
           });
 
           //监控 table ->td 编辑
@@ -774,58 +769,9 @@
           if ( word.length <= 1 ) {
             word = 0;
           };
-              url = url.replace(/__WORD__/g,word+'/__TIME__');
-          var t_start = $('#time-start').val();
-          var t_end  = $('#time-end').val();
-          var t_s = Number( Date.parse(t_start) );
-          var t_e = Number( Date.parse(t_end) );
-          if ( isNaN(t_s) ) {
-            t_s = 0;
-          }
-          if ( isNaN(t_e) ) {
-            t_e = 0;
-          };
-          url = url.replace(/__TIME__/g,'t_s/'+t_s+'/t_e/'+t_e);
+          url = url.replace(/__WORD__/g,word);
           window.location.href = url;
         },
-        viewNews: function(id){
-          var content = '',op={ title: '新闻预览' };
-          ll.ajax({
-            url: app_list.data.viewNewsUrl,
-            data: {id: id},
-            async: false,
-            success: function(data){
-              op.text = data.content;
-              op.size = 'lg';
-              $("#ll-modal-text").removeClass('text-center');
-              $("#ll-modal-text").removeAttr('style');
-
-            },
-            error: function(res){
-              op.text = '预览出错,请稍后再试';
-            }
-          });
-          ll.tips(op);
-        },
-        refreshNews:function(id){
-          ll.ajax({
-            url: app_list.data.refreshNewsUrl,
-            data: {id: id},
-            success: function () {
-              var ops = {};
-              ops.text = '更改成功';
-              ops.color = 'success';
-              ops.reload = true;
-              ll.alert(ops);
-            },
-            error: function(){
-              var ops = {};
-              ops.text = '更改失败';
-              ll.alert(ops);
-            },
-          });
-        }
-
       };
       app_list.init();
     });
